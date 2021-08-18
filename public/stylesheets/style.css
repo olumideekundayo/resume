@@ -1,0 +1,139 @@
+body {
+  padding: 0px !important;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.jumbo-bg {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  min-height: 100vh;
+  cursor: pointer;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  background: #f9f9f99a;
+}
+
+.logo > svg {
+  padding: 10px 30px 10px
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.txt > div {
+  width: 50vw;
+}
+.avata {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -50px;
+}
+
+.img-fit {
+  border-radius: 50%;
+}
+
+.box_me {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f9f9f99a !important;
+  padding-top: 70px;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile_name {
+  margin-bottom: 30px !important;
+}
+
+.profile_name > span {
+  font-size: 30px;
+}
+.profile_name > small {
+  font-size: 14px;
+  padding-bottom: 30px !important;
+}
+
+.profile_contact_header {
+  font-size: 20px;
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.profile_contact {
+  margin-bottom: 10px !important;
+}
+.profile_contact > strong {
+  padding-bottom: 10px !important;
+}
+
+.profile_skill {
+  margin-top: 30px !important;
+}
+
+.profile_skill > .profile_skill_header {
+  font-size: 20px;
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.profile_skill_txt {
+  padding-bottom: 10px;
+}
+
+.profile_skill_txt > span {
+  font-size: 14px;
+}
+
+.profile_txt > h4 {
+  font-size: 20px;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.profile_txt > p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.profile_edu, .profile_txt {
+  margin-bottom: 20px;
+}
+
+.profile_edu > h4 {
+  font-size: 20px;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.profile_edu > .split {
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px !important;
+}
+
+.profile_edu > p {
+  text-align: justify;
+  font-size: 14px;
+}
