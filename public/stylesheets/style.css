@@ -16,14 +16,23 @@ body {
   cursor: pointer;
 }
 
-.logo {
-  display: block;
-  width: 100%;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem 1rem 0;
   background: #f9f9f99a;
 }
 
 .logo > svg {
-  padding: 10px 30px 10px
+  padding: 10px 30px 10px !important
+}
+
+.contact {
+  padding-top: 10px !important;
+  margin-right: 50px !important;
+  text-decoration: none;
+  font-size: 19px;
+  color: rgb(85, 85, 85)
 }
 
 .txt {
@@ -147,4 +156,138 @@ body {
 .profile_edu > p {
   text-align: justify;
   font-size: 14px;
+}
+
+
+/* Conact */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/* .txt > div {
+  width: 0vw;
+} */
+
+.my-form {
+  background-color: #f9f9f99a !important;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.text-center {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #f9f9f9f0;
+}
+
+.my-form-input {
+  display: grid;
+  margin-bottom: 10px;
+}
+label {
+  font-weight: 700;
+  padding: 5px;
+  color: #f9f9f9f0;
+}
+input[type="text"], input[type="email"], textarea {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 5px;
+  background: rgba(206, 205, 203, 0.768);
+  color: #f9f9f99a;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+  color: #f9f9f99a;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button[type="submit"] {
+  height: 30px;
+  width: 50%;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgb(6, 228, 99);
+  color: #f9f9f99a;
+}
+
+button[type="submit"]:hover {
+  background: rgba(6, 228, 98, 0.693);
+  color: #f9f9f9f3;
+}
+
+/* Creating of Modal Popup */
+.popup {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.4s;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rbg(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+.popup-lunch {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+}
+.popup-inner {
+  background-color: #fff;
+  padding: 32px 16px;
+  max-width: 768px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.2);
+}
+.popup-body {
+  width: 30vw;
+  /* height: 30vh; */
+}
+@media only screen and (max-width: 768px) {
+  .popup-body {
+    width: 100%;
+  }
+}
+/* End Creating of Modal Popup */
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-navy-color {
+  height: 30px;
+  width: 50px !important;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgb(6, 228, 99);
+  color: #f9f9f99a;
 }

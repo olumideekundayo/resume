@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
@@ -16,112 +16,36 @@
                     <path d="M46.2617 18.1875C46.7539 18.1875 47.1758 18.0234 47.5273 17.6719C47.8789 17.3203 48.0664 16.8984 48.0664 16.4062C48.0664 15.9141 47.8789 15.4922 47.5273 15.1406C47.1758 14.7891 46.7539 14.6133 46.2617 14.6133C45.9219 14.6133 45.6172 14.6953 45.3359 14.8594C45.0547 15.0234 44.832 15.2344 44.668 15.5156C44.5039 15.7969 44.4336 16.0898 44.4336 16.4062C44.4336 16.8984 44.6094 17.3203 44.9609 17.6719C45.3125 18.0234 45.7461 18.1875 46.2617 18.1875Z" fill="#F8444F"/>
                 </svg>
             </a>
-            <a href="/contact" class="contact"> Contact form</a>
+            <a href="/" class="contact"> Home</a>
         </div>
-        <div class="txt">
+        <div class="contact-container">
             <div>
-                <div class="avata">
-                    <img src="/images/photo_2021.jpg" alt="" height="150px" width="150px" class="img-fit">
-                </div>
-                <div class="box_me">
-                    <div>
-                        <p class="profile_name">
-                            <span>Ekundayo Olumide. A.</span> <br>
-                            <small>BackEnd Developer</small>
-                        </p>
-                        <div>
-                            <h4 class="profile_contact_header">Contact</h4>
-                            <p class="profile_contact">
-                                <strong>Phone</strong> <br>
-                                <span>+2348187732178</span>
-                            </p>
-                            <p class="profile_contact">
-                                <strong>Email</strong> <br>
-                                <span>olumide.ekundayo@nexttechnigeria.com</span>
-                            </p>
-                            <p class="profile_contact">
-                                <strong>Address</strong> <br>
-                                <Address>20, Sete Ayide Abranje Ikotun Lagos</Address>
-                            </p>
-                        </div>
-
-                        <div class="profile_skill">
-                            <h4 class="profile_skill_header">Skills</h4>
-                            <p class="profile_skill_txt">
-                                <strong>HTML 5</strong>
-                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-                            </p>
-                            <p class="profile_skill_txt">
-                                <strong>CSS 3</strong>
-                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-                            </p>
-                            <p class="profile_skill_txt">
-                                <strong>JAVASCRIPT</strong>
-                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-                            </p>
-                            <p class="profile_skill_txt">
-                                <strong>NODE.JS</strong>
-                                <span>&#9733; &#9733; &#9733; &#9733; &#9734;</span>
-                            </p>
-                        </div>
-
-                        <div class="profile_skill">
-                            <h4 class="profile_skill_header">CERTIFICATIONS</h4>
-                            <p class="profile_skill_txt">
-                                <strong>Front End JavaScript Framework: AngularJS</strong>
-                            </p>
-                            <p class="profile_skill_txt">
-                                <strong>Front End JavaScript Framework and Tools: Bootstrap</strong>
-                            </p>
-                            <p class="profile_skill_txt">
-                                <strong>Version Control with Git</strong>
-                            </p>
-                        </div>
-                        
-
-
-
-
-
+                <div class="my-form">
+                    <div class="text-center">
+                        <h1>Contact</h1>
                     </div>
-                    <div>
-                        <div class="profile_txt">
-                            <h4>Profile</h4>
-                            <p>
-                                Experience in building scalable web-based JavaScript applications that uses API data. 
-                                Experience in the architectural concepts behind Node.js. 
-                                Experience using Git. Good interpersonal and communication skill, highly motivated, ability to solve problems, 
-                                professional with 6 month experience programming in a fast paced company, 
-                                ability to learn fast and work with team members in order to achieve the set goal for the organization.
-                            </p>
+                    <form action="/send-contact" method="POST">
+                        <div class="my-form-input">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="fname" placeholder="Full Name " id="name">
                         </div>
-
-                        <div class="profile_edu">
-                            <h4>Education</h4>
-                            <div class="split">
-                                <span><strong>OLABISI ONABANJO UNIVERSITY</strong><br> (Statistics BSc (Hons))</span>
-                                <small>2016 - 2020 </small>
-                            </div>
-                            <div class="split">
-                                <span><strong>HIGH CLASS COMPREHENSIVE </strong><br> (O’Level (SSCE))</span>
-                                <small>2005 – 2011</small>
-                            </div>
+                        <div class="my-form-input">
+                            <label for="mail">Email Address</label>
+                            <input type="email" name="email" placeholder="Email Address" id="mail">
                         </div>
-
-                        <div class="profile_edu">
-                            <h4>WORK EXPERIENCE</h4>
-                            <div class="split">
-                                <span><strong>MackIV </strong></span>
-                                <small>entry level</small>
-                            </div>
-                            <p>
-                                <strong>Duties:</strong> <br>
-                                * Preside over the entire the project as the Lead Developer <br>
-                                * Brainstorm with the other Lead Developer of other stack on the project
-
-                            </p>
+                        <div class="my-form-input">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" placeholder="subject " id="subject">
                         </div>
-                    </div>
+                         <div class="my-form-input">
+                            <label for="mess">Message </label>
+                            <textarea name="message" id="mess" cols="30" rows="10" placeholder="Type Message here"></textarea>
+                        </div>
+    
+                        <div class="button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
